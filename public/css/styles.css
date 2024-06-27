@@ -1148,11 +1148,14 @@ table td.action-buttons form {
             transition: transform 0.5s ease;
         }
         .carousel-item {
-            min-width: 100%;
-            box-sizing: border-box;
+            position: relative;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
         }
         .carousel-item img {
-            width: 100%;
+            width: 100;
+            height: 100;
             vertical-align: top;
         }
         .carousel-controls {
@@ -1184,6 +1187,12 @@ table td.action-buttons form {
             cursor: pointer;
         }
         .carousel-indicators .active {
+            background-color: black;
+        }
+
+        .carousel-image{
+            width: 350px;
+            height: 600px;
             background-color: black;
         }
 
