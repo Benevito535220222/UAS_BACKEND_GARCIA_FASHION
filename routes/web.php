@@ -53,7 +53,13 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::delete('/admin/products/{id}', [AdminController::class, 'destroy'])->name('admin.products.destroy');
     Route::get('/admin/orders', [AdminController::class, 'showOrders'])->name('admin.orders');
     Route::post('/orders/{orderId}/approve', [AdminController::class, 'approveOrder'])->name('admin.orders.approve');
-    Route::post('/orders/{orderId}/reject', [AdminController::class, 'rejectOrder'])->name('admin.orders.reject'); 
+    Route::post('/orders/{orderId}/reject', [AdminController::class, 'rejectOrder'])->name('admin.orders.reject');
+
+    // Routes for carousel management
+    Route::get('/admin/carousel', [AdminController::class, 'showCarouselItems'])->name('admin.carousel');
+    Route::post('/admin/carousel', [AdminController::class, 'storeCarouselItem'])->name('admin.carousel.store');
+    Route::post('/admin/carousel/edit/{id}', [AdminController::class, 'updateCarouselItem'])->name('admin.carousel.update');
+    Route::delete('/admin/carousel/{id}', [AdminController::class, 'deleteCarouselItem'])->name('admin.carousel.destroy');
 });
 Route::get('/profil', [ProfilController::class, 'index'])->name('profil');
 require __DIR__.'/auth.php';
