@@ -99,34 +99,34 @@ class CartController extends Controller
 
     public function checkout()
     {
-        $userId = auth()->id();
-        $cartItems = Cart::where('user_id', $userId)->with('product')->get();
+        // $userId = auth()->id();
+        // $cartItems = Cart::where('user_id', $userId)->with('product')->get();
 
-        // Proses setiap item cart
-        $cartItems->each(function ($item) use ($userId) {
-            // Menghitung total harga untuk item ini
-            $totalPrice = $item->product->price * $item->quantity;
+        // // Proses setiap item cart
+        // $cartItems->each(function ($item) use ($userId) {
+        //     // Menghitung total harga untuk item ini
+        //     $totalPrice = $item->product->price * $item->quantity;
 
-            // Membuat order baru
-            $order = Order::create([
-                'user_id' => $userId,
-                'status' => 'pending',
-                'total_price' => $totalPrice,
-                'product_name' => $item->product->name, // Simpan nama produk
-                'product_quantity' => $item->quantity, // Simpan jumlah produk
-                'product_size' => $item->size, // Simpan ukuran produk
-            ]);
+        //     // Membuat order baru
+        //     $order = Order::create([
+        //         'user_id' => $userId,
+        //         'status' => 'pending',
+        //         'total_price' => $totalPrice,
+        //         'product_name' => $item->product->name, // Simpan nama produk
+        //         'product_quantity' => $item->quantity, // Simpan jumlah produk
+        //         'product_size' => $item->size, // Simpan ukuran produk
+        //     ]);
 
-            // Mengupdate cart item dengan order_id yang baru dibuat
-            $item->update(['order_id' => $order->id]);
+        //     // Mengupdate cart item dengan order_id yang baru dibuat
+        //     $item->update(['order_id' => $order->id]);
 
-            // Mengurangi kuantitas produk
-            $product = $item->product;
-            $product->decrement('quantity', $item->quantity);
-        });
+        //     // Mengurangi kuantitas produk
+        //     $product = $item->product;
+        //     $product->decrement('quantity', $item->quantity);
+        // });
 
-        // Hapus cart items setelah checkout
-        Cart::where('user_id', $userId)->delete();
+        // // Hapus cart items setelah checkout
+        // Cart::where('user_id', $userId)->delete();
 
         // Simpan pesan sukses ke dalam session
         Session::flash('success', 'Checkout berhasil! Anda dapat melihat detail pesanan di profil Anda.');
