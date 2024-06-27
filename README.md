@@ -13,3 +13,22 @@ Wilson Alfando - 535220219
 Benevito Kevin - 535220222    
 Muhammad Raffi Hermawan - 535220259    
 
+## Tampilan
+
+<img src="public/images/ss/home.png" width="400">
+
+<img src="public/images/ss/login.png" width="400">
+
+<img src="public/images/ss/register.png" width="400">
+
+<img src="public/images/ss/shop.png" width="400">
+
+<img src="public/images/ss/profile.png" width="400">
+
+<img src="public/images/ss/cart.png" width="400">
+
+<img src="public/images/ss/user.png" width="400">
+
+<img src="public/images/ss/order.png" width="400">
+
+<img src="public/images/ss/product.png" width="400">
