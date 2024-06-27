@@ -15,20 +15,20 @@ Muhammad Raffi Hermawan - 535220259
 
 ## Tampilan
 
-<img src="public/images/ss/home.png" width="400">
+<p align="center"><img src="public/images/ss/home.png" width="500"></p>
 
-<img src="public/images/ss/login.png" width="400">
+<p align="center"><img src="public/images/ss/login.png" width="500"></p>
 
-<img src="public/images/ss/register.png" width="400">
+<p align="center"><img src="public/images/ss/register.png" width="500"></p>
 
-<img src="public/images/ss/shop.png" width="400">
+<p align="center"><img src="public/images/ss/shop.png" width="500"></p>
 
-<img src="public/images/ss/profile.png" width="400">
+<p align="center"><img src="public/images/ss/profile.png" width="500"></p>
 
-<img src="public/images/ss/cart.png" width="400">
+<p align="center"><img src="public/images/ss/cart.png" width="500"></p>
 
-<img src="public/images/ss/user.png" width="400">
+<p align="center"><img src="public/images/ss/user.png" width="500"></p>
 
-<img src="public/images/ss/order.png" width="400">
+<p align="center"><img src="public/images/ss/order.png" width="500"></p>
 
-<img src="public/images/ss/product.png" width="400">
+<p align="center"><img src="public/images/ss/product.png" width="500"></p>
