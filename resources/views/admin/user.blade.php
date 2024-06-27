@@ -17,8 +17,8 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="{{ route('admin.orders') }}">Order</a></li>
-                <li><a href="{{ route('admin.users') }}">Produk</a></li>
-                <li><a href="{{ route('admin.produk') }}">Users</a></li>
+                <li><a href="{{ route('admin.users') }}">Users</a></li>
+                <li><a href="{{ route('admin.produk') }}">Product</a></li>
                 <li><a href="{{ route('admin.carousel') }}">Carousel</a></li>
                 <li>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST">
