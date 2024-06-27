@@ -61,7 +61,7 @@
     <h1>Pesanan Anda telah diterima!</h1>
     <p>Pesanan Anda telah berhasil dilakukan. Kami menghargai bisnis Anda!</p>
     <p>Jika Anda memiliki pertanyaan, silakan kirim email kepada kami di <a href="mailto:orders@example.com">graciafashion@gmail.com</a>.</p>
-    <a href="/" class="button">Continue Shopping</a>
+    <a href="balik" class="button">Continue Shopping</a>
     <div class="contact-info">
       <p>Perlu bantuan? Jangan ragu tanyakan di media sosial kami!</p>
     </div>

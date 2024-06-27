@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 <body>
-    <div class="dashboard">
+<div class="dashboard">
         <div class="sidebar">
             <h2>Dashboard</h2>
             <ul>
@@ -16,6 +16,7 @@
                 <li><a href="{{ route('admin.orders') }}">Order</a></li>
                 <li><a href="{{ route('admin.users') }}">Produk</a></li>
                 <li><a href="{{ route('admin.produk') }}">Users</a></li>
+                <li><a href="{{ route('admin.carousel') }}">Carousel</a></li>
                 <li>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST">
                         @csrf
