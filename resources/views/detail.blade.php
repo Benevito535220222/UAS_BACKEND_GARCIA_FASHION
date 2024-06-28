@@ -6,7 +6,8 @@
     <div class="small-container single-product">
         <div class="child">
             <div class="halfchild">
-                <img src="{{ $product->image }}" width="550px" height="500px" id="prodImg"><br><br><br>
+            <img src="{{ asset($product->image) }}" alt="{{ $product->name }} " style="height: 350px; width:600">
+
             </div>
             <div class="halfchild">
                 <p>Home / Products</p>
@@ -42,7 +43,7 @@
     <div class="child">
         @foreach ($relatedProducts as $product)
         <div class="footerChild2">
-            <img src="{{ $product->image }}" alt="{{ $product->name }} " style="height: 350px; width:600">
+        <img src="{{ asset($product->image) }}" alt="{{ $product->name }} " style="height: 350px; width:600">
             <h4>{{ $product->name }}</h4>
             <div class="rating">
                 @for ($i = 0; $i < 5; $i++)

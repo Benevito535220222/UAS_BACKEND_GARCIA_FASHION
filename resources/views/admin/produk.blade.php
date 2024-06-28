@@ -15,7 +15,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="{{ route('admin.orders') }}">Order</a></li>
                 <li><a href="{{ route('admin.users') }}">Users</a></li>
-                <li><a href="{{ route('admin.produk') }}">Product</a></li>
+                <li><a href="{{ route('admin.produk') }}">Produk</a></li>
                 <li><a href="{{ route('admin.carousel') }}">Carousel</a></li>
                 <li>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST">
@@ -57,7 +57,7 @@
                         @foreach ($products as $product)
                             <tr>
                                 <td>{{ $product->name }}</td>
-                                <td><img src="{{ $product->image }}" alt="{{ $product->name }}" style="width: 100px;"></td>
+                                <td><img src="{{ asset($product->image) }}" alt="{{ $product->name }} " style="height: 350px; width:600"></td>
                                 <td>{{ $product->quantity }}</td>
                                 <td>Rp.{{ $product->price }}</td>
                                 <td>{{ $product->stripeId }}</td>

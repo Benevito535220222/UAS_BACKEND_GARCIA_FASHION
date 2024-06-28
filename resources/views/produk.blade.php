@@ -25,7 +25,8 @@
             @foreach ($products as $product)
                 <div class="col">
                     <div class="card h-100 shadow-sm">
-                        <img src="{{ $product->image }}" class="card-img-top" alt="Product Image" style="height: 350px; width:600">
+                    <img src="{{ asset($product->image) }}" alt="{{ $product->name }} " style="height: 350px; width:600">
+
                         <div class="card-body">
                             <h5 class="card-title fw-bold">{{ $product->name }}</h5>
                             <p class="card-text">Rp{{ number_format($product->price, 2, ',', '.') }}</p>
@@ -40,7 +41,6 @@
 
         <!-- Pagination Links -->
         <div class="d-flex justify-content-center mt-4">
-            {{ $products->links() }}
         </div>
     </div>
 </section>
