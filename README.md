@@ -13,6 +13,14 @@ Wilson Alfando - 535220219
 Benevito Kevin - 535220222    
 Muhammad Raffi Hermawan - 535220259    
 
+## Cara Menjalankan
+
+git clone https://github.com/Benevito535220222/UAS_BACKEND_GARCIA_FASHION/    
+composer install    
+php artisan migrate    
+php artisan db:seed    
+php artisan serve    
+
 ## Tampilan
 
 <p align="center"><img src="public/images/ss/home.png" width="500"></p>
